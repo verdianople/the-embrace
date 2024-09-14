@@ -1,0 +1,5 @@
+<ul>
+    <li webc:for="doc of $data.collections[tag]">
+        <a :href="doc.url" @text="doc.data.title"></a>
+    </li>
+</ul>

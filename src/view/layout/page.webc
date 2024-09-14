@@ -1,0 +1,5 @@
+---
+layout: app.webc
+---
+<taxonomy :@tags="tags"></taxonomy>
+<div @html="content"></div>

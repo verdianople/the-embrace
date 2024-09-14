@@ -1,0 +1,6 @@
+<ul>
+	<li webc:for="tag of filterDisplayTags(tags)">
+		<a webc:if="$data.collections.Tag.some((t) => t.fileSlug === tag)" @text="tag" :href="$data.collections.Tag.find((t) => t.fileSlug === tag)?.url"></a>
+		<span webc:else @text="tag"></span>
+	</li>
+</ul>
