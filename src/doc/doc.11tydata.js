@@ -1,6 +1,6 @@
 export default {
     tags: [
-        "doc",
+        "Doc",
     ],
     layout: "page.webc",
      permalink: function({page:{fileSlug}}) {

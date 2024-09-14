@@ -1,0 +1,16 @@
+---
+layout: app.webc
+---
+<h2>Documents</h2>
+<ul>
+    <li webc:for="doc of collections.Doc">
+        <a :href="doc.url" @text="doc.data.title"></a>
+    </li>
+</ul>
+
+<h2>Tags</h2>
+<ul>
+    <li webc:for="tag of collections.Tag">
+        <a :href="tag.url" @text="tag.data.title"></a>
+    </li>
+</ul>

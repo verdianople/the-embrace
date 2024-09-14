@@ -12,11 +12,7 @@ export default function(eleventyConfig) {
      * Remove the organization "doc" tag; we don't need to display it.
      */
     eleventyConfig.addFilter("filterDisplayTags", (tags) => {
-        return tags.filter((tag) => tag !== 'doc');
-    })
-
-    eleventyConfig.addFilter("getTagUrl", async function(tagName, collections) {
-        console.log(collections)
+        return tags.filter((tag) => tag !== 'Doc');
     })
 };
 
