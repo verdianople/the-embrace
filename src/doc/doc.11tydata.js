@@ -1,8 +1,8 @@
-export default {
+module.exports = {
     tags: [
         "Doc",
     ],
-    layout: "page.webc",
+    layout: "doc.webc",
      permalink: function({page:{fileSlug}}) {
         return `/doc/${this.slugify(fileSlug)}/`;
     }

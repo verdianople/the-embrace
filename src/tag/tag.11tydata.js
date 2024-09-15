@@ -1,4 +1,4 @@
-export default  {
+module.exports = {
     layout: "tag.webc",
     tags: [
         "Tag",

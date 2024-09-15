@@ -1,6 +1,7 @@
 ---
 layout: app.webc
 ---
+<h2 @text="title"></h2>
 <div @html="content"></div>
 <h3>Related Content</h3>
 <tag-link-list :@tag="page.fileSlug"></tag-link-list>

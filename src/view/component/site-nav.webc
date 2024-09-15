@@ -1,0 +1,19 @@
+<header webc:root="override">
+    <h1>The Embrace</h1>
+    <nav @html="eleventyNavigationToHtml(eleventyNavigation($data.collections.all))"></nav>
+</header>
+<style webc:scoped>
+    :host {
+        display: flex;
+        align-items: center;
+    }
+    :host ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    :host h1 {
+        padding: 0;
+        margin: 0;
+    }
+</style>

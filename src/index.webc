@@ -1,10 +1,13 @@
 ---
 layout: app.webc
+eleventyNavigation:
+    key: Home
 ---
 <h2>Documents</h2>
 <ul>
     <li webc:for="doc of collections.Doc">
         <a :href="doc.url" @text="doc.data.title"></a>
+        <taxonomy :@tags="doc.data.tags"></taxonomy>
     </li>
 </ul>
 

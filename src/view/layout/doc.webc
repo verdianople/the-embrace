@@ -1,0 +1,11 @@
+---
+layout: app.webc
+---
+<h2 @text="title"></h2>
+
+<section>
+    <strong>Tags</strong>
+    <taxonomy :@tags="tags"></taxonomy>
+</section>
+
+<div @html="content"></div>
